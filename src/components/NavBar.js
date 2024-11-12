@@ -10,6 +10,9 @@ function NavBar() {
       <NavLink to="/search" className="nav-link">
         Search Breeds
       </NavLink>
+      <NavLink to="/breeds" className="nav-link">
+        Breeds
+      </NavLink>
       <NavLink to="/addbreed" className="nav-link">
         AddBreed
       </NavLink>

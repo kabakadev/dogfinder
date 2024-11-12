@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import BreedDetail from "./pages/BreedDetail";
 import AddBreed from "./pages/AddBreed";
+import BreedListPage from "./pages/BreedListPage";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: "search", element: <Search /> },
       { path: "breed/:id", element: <BreedDetail /> },
       { path: "addbreed", element: <AddBreed /> },
+      { path: "/breeds", element: <BreedListPage /> },
     ],
   },
 ]);
