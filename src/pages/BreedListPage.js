@@ -16,15 +16,16 @@ function BreedListPage() {
   if (loading) {
     return <p>The data is still loading, please wait a moment.</p>;
   }
+  console.log(breeds);
   return (
     <div>
       <h1>Available Breeds</h1>
       <ul>
-        {breeds.map((breed) => {
+        {breeds.map((breed) => (
           <li key={breed.id}>
-            <Link to={`/breed/${breed.id}`}>{breed.breed}</Link>{" "}
-          </li>;
-        })}
+            <Link to={`/breed/${breed.id}`}>{breed.breed}</Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

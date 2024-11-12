@@ -5,7 +5,6 @@ function BreedDetail() {
   const [loading, setLoading] = useState(true);
   const baseUrl = "http://localhost:3000/breeds";
   const { id } = useParams();
-  console.log(breedData);
 
   useEffect(() => {
     fetch(`${baseUrl}/${id}`)
@@ -13,14 +12,12 @@ function BreedDetail() {
       .then((data) => {
         setBreedData(data);
         setLoading(false);
-        console.log(breedData);
       });
   }, [id]);
   if (loading) {
     return <p>Your dog breeds are still loading!Please be patient.</p>;
   }
 
-  console.log(breedData);
   return (
     <div>
       <h1>New Breed info!</h1>
