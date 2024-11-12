@@ -22,10 +22,12 @@ function BreedDetail() {
   return (
     <div>
       <h1>New Breed info!</h1>
-      <p>Extra info about a specific breed will appear here.</p>
-      <p>{}</p>
-      <p></p>
-      <p>View breeds id:{id}</p>
+      <h2>{breedData.name}</h2>
+      <p>{breedData.description}</p>
+      <li>
+        <img src={breedData.image} alt="dog breed" />
+        <p> {breedData.color}</p>
+      </li>
     </div>
   );
 }
