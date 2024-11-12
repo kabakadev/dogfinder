@@ -1,4 +1,11 @@
+import { useParams } from "react-router-dom";
 function BreedDetail() {
-  return <div>BreedDetail</div>;
+  const { id } = useParams();
+  return (
+    <div>
+      <p>Breed Details</p>
+      <p>View breeds id:{id}</p>
+    </div>
+  );
 }
 export default BreedDetail;
