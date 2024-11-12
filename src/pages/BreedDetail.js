@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 function BreedDetail() {
+  const [breedData, setBreedData] = useState([]);
+  const [loading, setLoading] = useState(true);
   const baseUrl = "http://localhost:3000/breeds";
   const { id } = useParams();
-  const [breedData, setBreedData] = useState([]);
 
   useEffect(() => {
-    fetch(baseUrl)
+    fetch(`${baseUrl}/${id}`)
       .then((res) => res.json())
-      .then((data) => setBreedData(data));
-  }, []);
+      .then((data) => {
+        setBreedData(data);
+        setLoading(false);
+      });
+  }, [id]);
+  if (loading) {
+    return <p>Your dog breeds are still loading!Please be patient.</p>;
+  }
 
   console.log(breedData);
   return (
