@@ -1,4 +1,8 @@
 function Search() {
-  return <div>Search</div>;
+  return (
+    <div>
+      <p>Search for any breeds that interest you!</p>
+    </div>
+  );
 }
 export default Search;

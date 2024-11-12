@@ -99,6 +99,16 @@
       "lifeSpan": "8-10 years",
       "temperament": ["Loyal", "Protective", "Confident"],
       "image": "https://images.unsplash.com/photo-1729479502513-4d760f4d1954?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": 11,
+      "breed": "Rhodesian Ridgeback",
+      "description": "Rhodesian Ridgebacks are known to be loyal and intelligent.They require consistent training and correct socialization; therefore they are often not the best choice for inexperienced dog owners and families with younger children.",
+      "color": " Reddish-brown hue",
+      "size": "Large",
+      "lifeSpan": "8-10 years",
+      "temperament": ["Loyal", "Protective", "Intelligent"],
+      "image": "https://images.unsplash.com/photo-1548946621-40a6c9aa7add?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }

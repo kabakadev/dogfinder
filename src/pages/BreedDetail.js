@@ -9,6 +9,7 @@ function BreedDetail() {
   return (
     <div>
       <h1>New Breed info!</h1>
+      <p>Extra info about a specific breed will appear here.</p>
       <p>{breed.name}</p>
       <p>{breed.description}</p>
       <p>View breeds id:{id}</p>
