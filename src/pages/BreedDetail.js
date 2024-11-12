@@ -1,24 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 function BreedDetail() {
   const baseUrl = "http://localhost:3000/breeds";
   const { id } = useParams();
-  // const breedData = {
-  //   1: { name: "rotweller", description: "angry and mad" },
-  //   2: { name: "rhodesian ridgeback", description: "known for hunting lions" },
-  // };
+  const [breedData, setBreedData] = useState([]);
+
   useEffect(() => {
     fetch(baseUrl)
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setBreedData(data));
   }, []);
-  const breed = breedData[id];
+
+  console.log(breedData);
   return (
     <div>
       <h1>New Breed info!</h1>
       <p>Extra info about a specific breed will appear here.</p>
-      <p>{breed.name}</p>
-      <p>{breed.description}</p>
+      <p>{}</p>
+      <p></p>
       <p>View breeds id:{id}</p>
     </div>
   );
