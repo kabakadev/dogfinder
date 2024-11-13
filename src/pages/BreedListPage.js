@@ -25,7 +25,7 @@ function BreedListPage() {
   }
 
   return (
-    <div>
+    <div className="bg-gray-200 p-8">
       <h1 className="text-2xl font-bold mb-2 flex justify-center items-center">
         Available Breeds
       </h1>

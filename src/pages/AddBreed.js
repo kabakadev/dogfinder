@@ -28,69 +28,72 @@ function AddBreed() {
       });
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Breed:
-        <input
-          type="text"
-          name="name"
-          value={breed}
-          onChange={(e) => setBreed(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        Description:
-        <input
-          type="text"
-          name="name"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        color:
-        <input
-          type="text"
-          name="name"
-          value={color}
-          onChange={(e) => setColor(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        size:
-        <input
-          type="text"
-          name="name"
-          value={size}
-          onChange={(e) => setSize(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        lifespan:
-        <input
-          type="text"
-          name="name"
-          value={lifeSpan}
-          onChange={(e) => setLifeSpan(e.target.value)}
-          required
-        />
-      </label>
-      <label>
-        image:
-        <input
-          type="text"
-          name="name"
-          value={imageUrl}
-          onChange={(e) => setImageUrl(e.target.value)}
-          required
-        />
-      </label>
-      <button type="submit">Add breed </button>
-    </form>
+    <div className="bg-gray-200 h-screen p-4">
+      {" "}
+      <form onSubmit={handleSubmit}>
+        <label>
+          Breed:
+          <input
+            type="text"
+            name="name"
+            value={breed}
+            onChange={(e) => setBreed(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          Description:
+          <input
+            type="text"
+            name="name"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          color:
+          <input
+            type="text"
+            name="name"
+            value={color}
+            onChange={(e) => setColor(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          size:
+          <input
+            type="text"
+            name="name"
+            value={size}
+            onChange={(e) => setSize(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          lifespan:
+          <input
+            type="text"
+            name="name"
+            value={lifeSpan}
+            onChange={(e) => setLifeSpan(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          image:
+          <input
+            type="text"
+            name="name"
+            value={imageUrl}
+            onChange={(e) => setImageUrl(e.target.value)}
+            required
+          />
+        </label>
+        <button type="submit">Add breed </button>
+      </form>
+    </div>
   );
 }
 export default AddBreed;
