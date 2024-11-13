@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 import Search from "../components/Search";
+import BreedCard from "../components/BreedCard";
 
 function BreedListPage() {
   const [search, setSearch] = useState("");
@@ -17,7 +18,7 @@ function BreedListPage() {
       });
   }, []);
   const filteredBreeds = breeds.filter((breed) =>
-    breed.breed.toLowerCase().includes(Search.toLowerCase())
+    breed.breed.toLowerCase().includes(search.toLowerCase())
   );
   if (loading) {
     return <p>The data is still loading, please wait a moment.</p>;
@@ -29,9 +30,7 @@ function BreedListPage() {
       <Search search={search} setSearch={setSearch} />
       <ul>
         {filteredBreeds.map((breed) => (
-          <li key={breed.id}>
-            <Link to={`/breed/${breed.id}`}>{breed.breed}</Link>
-          </li>
+          <BreedCard key={breed.id} />
         ))}
       </ul>
     </div>
