@@ -26,13 +26,13 @@ function BreedListPage() {
 
   return (
     <div>
-      <h1>Available Breeds</h1>
+      <h1 className="text-2xl font-bold mb-2">Available Breeds</h1>
       <Search search={search} setSearch={setSearch} />
-      <ul>
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-6">
         {filteredBreeds.map((breed) => (
           <BreedCard key={breed.id} breed={breed} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
