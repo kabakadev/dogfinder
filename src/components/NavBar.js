@@ -3,7 +3,12 @@ import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav>
+    <nav className="bg-gray-500 text-white py-3 px-6 flex justify-center items-center">
+      <div>
+        <Link to="/" className="hover:text-gray-200">
+          Dog Breed Finder
+        </Link>
+      </div>
       <NavLink to="/" className="nav-link">
         Home
       </NavLink>
