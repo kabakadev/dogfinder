@@ -23,9 +23,9 @@ function AddBreed() {
       }),
     })
       .then((res) => res.json())
-      .then((data) =>
-        console.log(`Data:${data} has been posted successfully! `)
-      );
+      .then((data) => {
+        console.log(`Data:${data} has been posted successfully! `);
+      });
   }
   return (
     <form onSubmit={handleSubmit}>
