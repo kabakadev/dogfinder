@@ -9,6 +9,18 @@ function Home() {
           Have a look at the wide selection of the most popular dog breeds. Feel
           free to also add your own Dog breed here.
         </p>
+        <section className="mb-8">
+          <h2 className="text-2xl font-medium text-gray-300 mb-4">
+            Editor's Pick{" "}
+          </h2>
+          <div className="bg-white shadow-md rounded-lg overflow-hidden p-4">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1668208363137-7ebc4ce6b7b7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="featured dog"
+              className="w-full md:w-1/2 object-cover "
+            />
+          </div>
+        </section>
       </section>
     </div>
   );
