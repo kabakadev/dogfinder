@@ -7,9 +7,6 @@ function NavBar() {
       <NavLink to="/" className="nav-link">
         Home
       </NavLink>
-      <NavLink to="/search" className="nav-link">
-        Search Breeds
-      </NavLink>
       <NavLink to="/breeds" className="nav-link">
         Breeds
       </NavLink>
