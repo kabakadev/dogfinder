@@ -29,6 +29,7 @@ function BreedDetail() {
 
   return (
     <div>
+      <button onClick={() => navigate("/breeds")}> Go back</button>
       <h1>New Breed info!</h1>
       <h2>{breedData.name}</h2>
       <p>{breedData.description}</p>
@@ -49,7 +50,6 @@ function BreedDetail() {
           alt="an example image"
         />
       </Card>
-      <button onClick={() => navigate("/breeds")}> Go back</button>
     </div>
   );
 }
