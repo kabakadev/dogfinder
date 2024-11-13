@@ -16,7 +16,7 @@ function BreedListPage() {
   if (loading) {
     return <p>The data is still loading, please wait a moment.</p>;
   }
-  console.log(breeds);
+
   return (
     <div>
       <h1>Available Breeds</h1>

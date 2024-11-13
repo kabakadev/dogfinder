@@ -1,9 +1,32 @@
 function AddBreed() {
   return (
-    <div>
-      <h1>You can add a new breed here!</h1>{" "}
-      <p>Feel free to drop your favorite dog images</p>
-    </div>
+   
+    <form>
+      <label>
+        Breed:
+        <input type="text" name="name" value={} onChange={} required/>
+      </label>
+      <label>
+        Description:
+        <input type="text" name="name" value={} onChange={} required/>
+      </label>
+      <label>
+        color:
+        <input type="text" name="name" value={} onChange={} required/>
+      </label>
+      <label>
+        size:
+        <input type="text" name="name" value={} onChange={} required/>
+      </label>
+      <label>
+        lifespan:
+        <input type="text" name="name" value={} onChange={} required/>
+      </label>
+      <label>
+        image:
+        <input type="text" name="name" value={} onChange={} required/>
+      </label>
+    </form>
   );
 }
 export default AddBreed;
