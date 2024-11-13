@@ -15,7 +15,7 @@ const router = createBrowserRouter([
       { path: "search", element: <Search /> },
       { path: "breed/:id", element: <BreedDetail /> },
       { path: "addbreed", element: <AddBreed /> },
-      { path: "/breeds", element: <BreedListPage /> },
+      { path: "breeds", element: <BreedListPage /> },
     ],
   },
 ]);

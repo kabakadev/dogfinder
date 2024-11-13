@@ -9,7 +9,7 @@ function AddBreed() {
   const [lifeSpan, setLifeSpan] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   function handleSubmit(e) {
-    e.preventDefaut();
+    e.preventDefault();
     fetch(baseUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -20,12 +20,12 @@ function AddBreed() {
         size,
         lifeSpan,
         image: imageUrl,
-      })
-        .then((res) => res.json())
-        .then((data) =>
-          console.log(`Data:${data} has been posted successfully! `)
-        ),
-    });
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) =>
+        console.log(`Data:${data} has been posted successfully! `)
+      );
   }
   return (
     <form onSubmit={handleSubmit}>
