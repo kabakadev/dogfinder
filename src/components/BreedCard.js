@@ -1,6 +1,13 @@
-import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import {
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
+import { Link } from "react-router-dom";
 
-function BreedCard() {
+function BreedCard({ breed }) {
   return (
     <Card
       sx={{
@@ -13,11 +20,16 @@ function BreedCard() {
       <CardMedia
         component="img"
         height="140"
-        image="https://images.unsplash.com/photo-1649923625148-1e13d9431053?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        image={breed.image}
         alt="an example image"
       />
       <CardContent>
-        <Typography variant="h5" component="div"></Typography>
+        <Typography variant="h5" component="div">
+          {breed.breed}
+        </Typography>
+        <Button size="medium" component={Link} to={`/breed/${breed.id}`}>
+          View extra info
+        </Button>
       </CardContent>
     </Card>
   );

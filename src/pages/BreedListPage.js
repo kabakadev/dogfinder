@@ -30,7 +30,7 @@ function BreedListPage() {
       <Search search={search} setSearch={setSearch} />
       <ul>
         {filteredBreeds.map((breed) => (
-          <BreedCard key={breed.id} />
+          <BreedCard key={breed.id} breed={breed} />
         ))}
       </ul>
     </div>
