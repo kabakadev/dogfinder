@@ -13,12 +13,22 @@ function Home() {
           <h2 className="text-2xl font-medium text-gray-900 mb-4">
             Editor's Pick{" "}
           </h2>
-          <div className="bg-white shadow-md rounded-lg overflow-hidden p-4">
+          <div className="bg-white shadow-md rounded-lg overflow-hidden p-4 flex">
             <img
               src="https://images.unsplash.com/photo-1513284999445-edcb3221417c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="featured dog"
               className="w-full md:w-1/2 object-cover "
             />
+            <div className="p-4">
+              <h3 className="text-4xl font-bold text-gray-800">
+                {" "}
+                Siberian Husky
+              </h3>
+              <p className="text-gray-400">
+                A wolf like majestic Dog, that requires lots of attention and
+                grooming. Well suited in a cold climate.{" "}
+              </p>
+            </div>
           </div>
         </section>
       </section>
