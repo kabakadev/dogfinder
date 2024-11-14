@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="container mx-auto px-4 py-8 bg-gray-200">
@@ -6,8 +8,15 @@ function Home() {
           Explore a variety of Dog Breeds!
         </h1>
         <p className="text-lg text-gray-500">
-          Have a look at the wide selection of the most popular dog breeds. Feel
-          free to also add your own Dog breed here.
+          Have a look at the wide selection of the most popular dog{" "}
+          <Link to="/breeds" className="text-blue-500 hover:underline">
+            breeds.
+          </Link>
+          Feel free to also add your own Dog breed{" "}
+          <Link to="/addbreed" className="text-blue-500 hover:underline">
+            {" "}
+            here.
+          </Link>
         </p>
 
         <h2 className="text-2xl  text-gray-900 mb-4 flex justify-start items-center mt-8 font-bold underline ">
@@ -28,10 +37,12 @@ function Home() {
           </div>
         </div>
       </section>
-      <div className="text-center mt-8">
-        <button className="px-6 py-3 bg-green-700 text-white font-bold rounded-md hover:bg-green-900 transition">
-          View all breeds
-        </button>
+      <div className="mt-8">
+        <Link to="/breeds">
+          <button className="px-6 py-3 bg-green-700 text-white font-bold rounded-md hover:bg-green-900 transition">
+            View all breeds
+          </button>
+        </Link>
       </div>
     </div>
   );
