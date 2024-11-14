@@ -6,7 +6,7 @@ import BreedCard from "../components/BreedCard";
 function BreedListPage() {
   const [search, setSearch] = useState("");
 
-  const baseUrl = "http://localhost:3000/breeds";
+  const baseUrl = "https://dog-finder-json-server.onrender.com/breeds";
   const [breeds, setBreeds] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {

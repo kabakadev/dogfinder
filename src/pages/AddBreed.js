@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function AddBreed() {
-  const baseUrl = "http://localhost:3000/breeds";
+  const baseUrl = "https://dog-finder-json-server.onrender.com/breeds";
   const [breed, setBreed] = useState("");
   const [description, setDescription] = useState("");
   const [color, setColor] = useState("");

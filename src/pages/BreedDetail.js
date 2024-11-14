@@ -5,7 +5,7 @@ import { Card, CardMedia } from "@mui/material";
 function BreedDetail() {
   const [breedData, setBreedData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const baseUrl = "http://localhost:3000/breeds";
+  const baseUrl = "https://dog-finder-json-server.onrender.com/breeds";
   const { id } = useParams();
   const navigate = useNavigate();
 
