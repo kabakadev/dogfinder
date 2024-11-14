@@ -2,11 +2,11 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import {
-  Button,
+  
   Card,
-  CardContent,
+ 
   CardMedia,
-  Typography,
+  
 } from "@mui/material";
 function BreedDetail() {
   const [breedData, setBreedData] = useState([]);

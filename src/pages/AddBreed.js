@@ -83,14 +83,9 @@ function AddBreed() {
         </label>
         <label>
           image:
-          <input
-            type="text"
-            name="name"
-            value={imageUrl}
-            onChange={(e) => setImageUrl(e.target.value)}
-            required
-          />
-          <UploadWidget />
+          <input type="text" name="name" value={imageUrl} readOnly required />
+          {/* {console.log(imageUrl)} */}
+          <UploadWidget setImageUrl={setImageUrl} />
         </label>
         <button type="submit">Add breed </button>
       </form>

@@ -107,6 +107,134 @@
       "size": "small",
       "lifeSpan": "9 -10years",
       "image": "https://images.unsplash.com/photo-1530394168616-16a229c8c12e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "8b21",
+      "breed": "German Spitz",
+      "description": "A mixture of german shepherd and japanese spitz",
+      "color": "white",
+      "size": "medium",
+      "lifeSpan": "9 -10years"
+    },
+    {
+      "id": "5d3d",
+      "breed": "German Spitz",
+      "description": "A mixture of german shepherd and japanese spitz",
+      "color": "white",
+      "size": "medium",
+      "lifeSpan": "9 -10years"
+    },
+    {
+      "id": "0c67",
+      "breed": "German Spitz",
+      "description": "A mixture of german shepherd and japanese spitz",
+      "color": "white",
+      "size": "medium",
+      "lifeSpan": "9 -10years"
+    },
+    {
+      "id": "224a",
+      "breed": "German Spitz",
+      "description": "A mixture of german shepherd and japanese spitz",
+      "color": "white",
+      "size": "medium",
+      "lifeSpan": "9 -10years"
+    },
+    {
+      "id": "de5a",
+      "breed": "German Spitz",
+      "description": "a really cool dog",
+      "color": "white",
+      "size": "medium",
+      "lifeSpan": "9-10years"
+    },
+    {
+      "id": "84b5",
+      "breed": "German Spitz",
+      "description": "a really cool dog",
+      "color": "white",
+      "size": "medium",
+      "lifeSpan": "9-10years"
+    },
+    {
+      "id": "7858",
+      "breed": "German Spitz",
+      "description": "dff",
+      "color": "dsfdf",
+      "size": "sdffs",
+      "lifeSpan": "sdfsfs"
+    },
+    {
+      "id": "d2cf",
+      "breed": "German spitz",
+      "description": "a really cool dog",
+      "color": "brown",
+      "size": "ekfew",
+      "lifeSpan": "8-12 years"
+    },
+    {
+      "id": "be58",
+      "breed": "German Spitz",
+      "description": "a really cool dog",
+      "color": "brown",
+      "size": "medium",
+      "lifeSpan": "9-10years"
+    },
+    {
+      "id": "ade5",
+      "breed": "German Spitz",
+      "description": "a really cool dog",
+      "color": "brown",
+      "size": "medium",
+      "lifeSpan": "9-10years"
+    },
+    {
+      "id": "23d7",
+      "breed": "ok",
+      "description": "will this wokr",
+      "color": "greb",
+      "size": "er",
+      "lifeSpan": "56"
+    },
+    {
+      "id": "ae6f",
+      "breed": "ok",
+      "description": "will this wokr",
+      "color": "greb",
+      "size": "er",
+      "lifeSpan": "56"
+    },
+    {
+      "id": "6dbf",
+      "breed": "Test image",
+      "description": "Cool",
+      "color": "black",
+      "size": "green",
+      "lifeSpan": "fwefwef"
+    },
+    {
+      "id": "d631",
+      "breed": "Test image",
+      "description": "Cool",
+      "color": "black",
+      "size": "green",
+      "lifeSpan": "fwefwef"
+    },
+    {
+      "id": "e027",
+      "breed": "Testing feature",
+      "description": "ddfds",
+      "color": "sdfsfsdsf",
+      "size": "sdfsfsdf",
+      "lifeSpan": "sfsdf"
+    },
+    {
+      "id": "9e8c",
+      "breed": "great",
+      "description": "dfggfd",
+      "color": "fdgdfsg",
+      "size": "dsfgdfgd",
+      "lifeSpan": "sdgdfgd"
     }
   ]
 }
