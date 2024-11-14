@@ -7,8 +7,8 @@ const UploadWidget = ({ setImageUrl }) => {
     cloudinaryRef.current = window.cloudinary;
     widetRef.current = cloudinaryRef.current.createUploadWidget(
       {
-        cloudName: "dhml0o3an",
-        uploadPreset: "fpq7ynzo",
+        cloudName: "placeholder",
+        uploadPreset: "placeholder",
       },
       function (error, result) {
         const image = result.info.secure_url;

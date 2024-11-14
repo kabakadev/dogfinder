@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UploadWidget from "../components/UploadWidget";
+
 function AddBreed() {
   const baseUrl = "http://localhost:3000/breeds";
   const [breed, setBreed] = useState("");
@@ -83,9 +83,13 @@ function AddBreed() {
         </label>
         <label>
           image:
-          <input type="text" name="name" value={imageUrl} readOnly required />
-          {/* {console.log(imageUrl)} */}
-          <UploadWidget setImageUrl={setImageUrl} />
+          <input
+            type="text"
+            name="name"
+            value={imageUrl}
+            onChange={(e) => setImageUrl(e.target.value)}
+            required
+          />
         </label>
         <button type="submit">Add breed </button>
       </form>
