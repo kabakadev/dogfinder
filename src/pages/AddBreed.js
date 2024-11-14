@@ -58,7 +58,7 @@ function AddBreed() {
             />
           </label>
           <label className="block mb-4">
-            color:
+            Color:
             <input
               type="text"
               name="name"
@@ -69,7 +69,7 @@ function AddBreed() {
             />
           </label>
           <label className="block mb-4">
-            size:
+            Size:
             <input
               type="text"
               name="name"
@@ -80,7 +80,7 @@ function AddBreed() {
             />
           </label>
           <label className="block mb-4">
-            lifespan:
+            Lifespan:
             <input
               type="text"
               name="name"
@@ -91,7 +91,7 @@ function AddBreed() {
             />
           </label>
           <label className="block mb-4">
-            image:
+            ImageUrl:
             <input
               type="text"
               name="name"
@@ -101,7 +101,12 @@ function AddBreed() {
               className={styleClasses}
             />
           </label>
-          <button type="submit">Add breed </button>
+          <button
+            type="submit"
+            className="mt-4 px-6 mx-auto flex align-center bg-blue-400 text-white font-bold rounded-md hover:bg-blue-800 transistion"
+          >
+            Add breed{" "}
+          </button>
         </form>
       </div>
     </div>
