@@ -51,7 +51,7 @@ If you want to run the project locally, you'll need:
 1. Clone this repository using:
 
    ```bash
-   git clonehttps://github.com/kabakadev/dogfinder.git
+   git clone https://github.com/kabakadev/dogfinder.git
    ```
 
    or by downloading a ZIP file of the code.
