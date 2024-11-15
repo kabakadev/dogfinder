@@ -23,7 +23,13 @@ function BreedDetail() {
 
   return (
     <div>
-      <button onClick={() => navigate("/breeds")}> Go back</button>
+      <button
+        onClick={() => navigate("/breeds")}
+        className="mt-4 px-6  bg-red-400 text-white font-bold rounded-md hover:bg-red-800 transistion"
+      >
+        {" "}
+        Go back
+      </button>
       <h1>New Breed info!</h1>
       <h2>{breedData.name}</h2>
       <p>{breedData.description}</p>

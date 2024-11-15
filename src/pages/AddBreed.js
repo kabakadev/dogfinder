@@ -27,6 +27,13 @@ function AddBreed() {
     })
       .then((res) => res.json())
       .then((data) => {
+        setBreed("");
+        setColor("");
+        setSize("");
+        setDescription("");
+        setLifeSpan("");
+        setImageUrl("");
+
         console.log(`Data:${data} has been posted successfully! `);
       });
   }
@@ -103,7 +110,7 @@ function AddBreed() {
           </label>
           <button
             type="submit"
-            className="mt-4 px-6 mx-auto flex align-center bg-blue-400 text-white font-bold rounded-md hover:bg-blue-800 transistion"
+            className="mt-4 px-6 mx-auto flex align-center  bg-green-700 text-white font-bold rounded-md hover:bg-green-800 transistion"
           >
             Add breed{" "}
           </button>
